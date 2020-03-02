@@ -1,0 +1,37 @@
+//------------переменные
+
+$main-font: "Spartan", sans-serif; //основной шрифт
+$second-color: #fff;
+
+//-----общие стили
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+}
+
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-risk{
+  width: 315px;
+  height: 70px;
+  color: $second-color;
+  font-weight: 800;
+  background: url("../../media/images/btnBack.png") no-repeat;
+}
+
+
+//----- mixin
+
+@mixin auto-margin{
+  margin: 0 auto;
+}
+
+@mixin global-btn{
+
+}

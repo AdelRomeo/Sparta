@@ -1,0 +1,99 @@
+@import "global.scss";
+
+.main-header{
+  background: url("../../media/images/headerBack.png") top center no-repeat;
+  padding-top: 30px;
+  padding-bottom: 200px;
+  max-height: 1006px;
+}
+
+.top-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+  color: $second-color;
+  @include auto-margin;
+  &>span{
+    font-size: 18px;
+  }
+}
+
+.call-survive{
+  margin-left: 20%;
+  transition: all ease 1000ms;
+}
+
+.survive_title{
+  transition: font-size 1000ms;
+  color: $second-color;
+  font-size: 68px;
+  font-weight: bold;
+  margin-top: 140px;
+  &>span{
+    transition: font-size 1000ms;
+    color: #FF0000;
+    font-size: 150px;
+    font-family: Caveat, sans-serif;
+  }
+}
+
+.survive_working-days{
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.survive_days-logo{
+  position: relative;
+  width: 205px;
+  height: 40px;
+  background: url("../../media/images/dayBack.png") no-repeat;
+  margin-right: 30px;
+  &>span{
+    position: absolute;
+    font-weight: 800;
+    font-size: 17px;
+    top: 12px;
+  }
+}
+
+.survive_days-pt{
+  left: 8px;
+}
+
+.survive_days-sb{
+  left: 90px;
+}
+
+.survive_days-vs{
+  left: 172px;
+}
+
+.survive_days-info{
+  color: $second-color;
+  font-size: 14px;
+  width: 90px;
+}
+
+.survive_submit{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 710px){
+
+  .call-survive{
+    margin-left: 10%;
+  }
+
+  .survive_title{
+    font-size: 50px;
+    font-weight: bold;
+    &>span{
+      font-size: 100px;
+    }
+  }
+
+}
