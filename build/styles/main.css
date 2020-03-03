@@ -1,4 +1,4 @@
-.challenge{position:relative;background:#ffffff;padding-top:100px;padding-left:25%;padding-right:25%}.challenge_start,.challenge-finish{position:absolute;top:0;left:0}.challenge_list{display:flex;flex-direction:column}.challenge_item{width:300px}.challenge_item-left{margin-left:20px;margin-right:auto}.challenge_item-right{margin-right:20px;margin-left:auto}
+.challenge{position:relative;background:#ffffff;padding-top:100px;padding-left:24%;padding-right:24%}.challenge_start,.challenge-finish{position:absolute;top:0;left:0}.challenge_list{display:flex;flex-direction:column}.challenge_item{width:300px}.challenge_item-left{margin-left:20px;margin-right:auto}.challenge_item-right{margin-right:20px;margin-left:auto}
 
 @font-face{font-family:"Spartan";src:url("../../fonts/spartan/Spartan-Regular.ttf")}@font-face{font-family:"Caveat";src:url("../../fonts/spartan/Caveat-Regular.ttf")}
 
