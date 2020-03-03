@@ -1,0 +1,33 @@
+.challenge{
+  position: relative;
+  background: #ffffff;
+  padding-top: 100px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.challenge_start,
+.challenge-finish{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.challenge_list{
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge_item{
+  width: 300px;
+}
+
+.challenge_item-left{
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.challenge_item-right{
+  margin-right: 20px;
+  margin-left: auto;
+}
