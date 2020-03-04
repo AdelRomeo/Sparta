@@ -1,25 +1,47 @@
+@import "global.scss";
+
 .challenge{
-  position: relative;
   background: #ffffff;
   padding-top: 100px;
-  padding-left: 24%;
-  padding-right: 24%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .challenge_start,
 .challenge-finish{
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  display: block;
+  width: max-content;
+  color: #FF0000;
+  font-size: 24px;
+  font-weight: bold;
+  @include auto-margin;
+  &:before{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    left: -20px;
+    top: 4px;
+  }
 }
 
 .challenge_list{
   display: flex;
   flex-direction: column;
+  margin-top: 200px;
 }
 
 .challenge_item{
-  width: 300px;
+  display: flex;
+  align-items: center;
+  width: 700px;
+  margin-top: -50px;
+  &>div{
+    margin: 0 auto;
+  }
 }
 
 .challenge_item-left{
@@ -30,4 +52,71 @@
 .challenge_item-right{
   margin-right: 20px;
   margin-left: auto;
+}
+
+.challenge_item-info{
+}
+
+.challenge_item-title{
+  text-align: center;
+  font-size: 20px;
+}
+
+.challenge_item-descr{
+  font-size: 16px;
+  line-height: 23px;
+}
+
+@media (max-width: 1600px) {
+
+  .challenge{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .challenge{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .challenge_title{
+    margin-bottom: -100px !important;
+  }
+
+  .challenge_item{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .challenge{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .challenge_item{
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 400px;
+    text-align: center;
+  }
+
+  .challenge_item-info{
+    width: 400px;
+  }
+
+  .challenge-finish{
+    position: absolute;
+    bottom: -20px;
+    left: 160px;
+  }
+
 }
