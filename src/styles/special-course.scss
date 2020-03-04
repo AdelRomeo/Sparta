@@ -1,0 +1,162 @@
+@import "global.scss";
+
+.special-course{
+  background: url("../../media/images/special-courseBack.png") #ffffff no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: $second-color;
+}
+
+.experience{
+  @include auto-margin;
+  display: flex;
+  border: 4px solid red;
+  width: 1350px;
+  margin-top: 100px;
+  min-height: 340px;
+}
+
+.experience_title{
+  width: 422px;
+  background: url("../../media/images/special-courseSmall.png") no-repeat;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  &>p{
+    display: block;
+    width: 300px;
+    @include auto-margin;
+    margin-top: 130px;
+  }
+}
+
+.experience-list{
+  display: flex;
+  justify-content: center;
+  width: 69%;
+}
+
+.experience_item{
+  width: 50%;
+  padding: 40px;
+  padding-bottom: 0;
+  &>span{
+    font-size: 80px;
+    font-family: $sec-font;
+    color: #51575D;
+  }
+  &>h4{
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  &>p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+.tabu{
+  @include auto-margin;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-top: 100px;
+}
+
+.tabu_title{
+  display: flex;
+  align-items: center;
+  width: 422px;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 10px;
+  margin-right: 80px;
+  &>span{
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    margin-right: 40px;
+    width: 190px;
+    height: 143px;
+    font-size: 50px;
+    background: url("../../media/images/backVoscl.png") no-repeat;
+  }
+}
+
+.tabu_item-cont{
+  display: flex;
+}
+
+.tabu_item{
+  width: 50%;
+  padding: 20px;
+  &>h4{
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  &>p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 1400px){
+
+  .special-course{
+    background: url("../../media/images/special-courseBackdesctop.png") #ffffff no-repeat;
+    background-size: cover;
+    min-height: 985px;
+  }
+
+  .experience{
+    width: 95%;
+  }
+
+  .experience_title{
+    background-size: cover;
+  }
+
+  .experience-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience_item{
+    width: 100%;
+  }
+
+  .tabu{
+    width: 100%;
+  }
+
+  .tabu_item{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1015px){
+
+  .tabu_item-cont{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px){
+
+  .experience{
+    flex-direction: column;
+    width: min-content;
+  }
+
+  .experience_title{
+    padding-bottom: 100px;
+  }
+
+  .experience-list{
+    width: 100%;
+  }
+
+  .tabu{
+    flex-direction: column;
+  }
+}
