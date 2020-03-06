@@ -1,0 +1,48 @@
+@import "global.scss";
+
+.knowledge{
+  background: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.knowledge_list{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.knowledge_item-left{
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.knowledge_item-right{
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.knowledge_item{
+  display: flex;
+  align-items: center;
+  width: 550px;
+}
+
+.knowledge_item-numb{
+  font-family: $sec-font;
+  font-size: 200px;
+  color: #838383;
+  margin-right: 20px;
+}
+
+.knowledge_item-info{
+  &>h4{
+    font-size: 20px;
+  }
+  &>p{
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
