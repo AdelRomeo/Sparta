@@ -1,0 +1,65 @@
+@import "global.scss";
+
+.lure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../media/images/lureBack.png") no-repeat #fff;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  min-height: 369px;
+  &>div{
+    display: flex;
+    align-items: center;
+  }
+  &>div>span{
+    font-size: 100px;
+    font-weight: 700;
+    margin-right: 30px;
+    font-family: $sec-font;
+    color: #FF0000;
+  }
+}
+
+.lure_descr{
+  display: flex;
+  flex-direction: column;
+  color: $second-color;
+  font-size: 41px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+@media (max-width: 1200px) {
+
+  .lure>div{
+    flex-direction: column;
+  }
+
+  .lure>div>span{
+    margin-bottom: -50px;
+    margin-left: -70px;
+  }
+
+  .lure_descr{
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 850px){
+
+  .lure{
+    flex-direction: column;
+    &>div>span{
+      font-size: 70px;
+      margin-bottom: -20px;
+      margin-left: 0px;
+    }
+  }
+
+  .lure_descr{
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+}
