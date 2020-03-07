@@ -27,7 +27,7 @@
 .knowledge_item{
   display: flex;
   align-items: center;
-  width: 550px;
+  width: 600px;
 }
 
 .knowledge_item-numb{
@@ -38,6 +38,7 @@
 }
 
 .knowledge_item-info{
+  margin-left: 20px;
   &>h4{
     font-size: 20px;
   }
@@ -45,4 +46,119 @@
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.knowledge_survive-city{
+  color: #FF0000;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.bread-crumbs{
+  display: flex;
+  overflow: hidden;
+}
+
+.bread-crumbs_item{
+  font-size: 16px;
+  padding: 5px;
+  &>span{
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    background: #FF0000;
+    color: white;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      width: 300px;
+      height: 3px;
+      top: 16px;
+      left: 35px;
+      background: #FF0000;
+    }
+  }
+}
+
+#bread-crumbs_last>span:after{
+  background: #ffffff;
+}
+
+@media (max-width: 1600px) {
+
+  .knowledge{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
+
+@media (max-width: 1300px) {
+
+  .knowledge{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .knowledge{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .knowledge_item-left,
+  .knowledge_item-right{
+    @include auto-margin;
+  }
+
+  .knowledge_survive-city{
+    font-size: 30px;
+  }
+
+  .bread-crumbs{
+    flex-direction: column;
+    @include auto-margin;
+    max-width: 70%;
+  }
+
+  .bread-crumbs_item{
+    display: flex;
+    &>span{
+      margin-right: 10px;
+      &:after{
+        width: 3px;
+        height: 300px;
+        top: 35px;
+        left: 16px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 700px){
+
+  .knowledge_item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &>span{
+      margin-bottom: -40px;
+    }
+  }
+
 }
