@@ -51,8 +51,8 @@ li{
   color: red;
   font-size: 60px;
   font-weight: 800;
+  text-align: center;
   @include auto-margin;
-  width: max-content;
 }
 
 @media (max-width: 700px) {
