@@ -1,0 +1,53 @@
+@import "global.scss";
+
+.skill{
+  background: url("../../media/images/skillsBack.png") no-repeat left top #ffffff;
+  padding-top: 50px;
+  margin-top: 150px;
+}
+
+.sill_list{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 10%;
+  width: 500px;
+  color: black;
+}
+
+.skill_item{
+  position: relative;
+  width: 230px;
+  margin-top: 100px;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #FF0000;
+    left: -30px;
+    border-radius: 50%;
+    top: calc(50% - 5px);
+  }
+  &:nth-child(1){
+  }
+  &:nth-child(2){
+    margin-left: 80px;
+  }
+  &:nth-child(3){
+    margin-left: 160px;
+  }
+  &:nth-child(4){
+    margin-left: 240px;
+  }
+  &:nth-child(5){
+    margin-left: 320px;
+  }
+}
+
+@media (max-width: 1400px){
+
+  .sill_list{
+    margin-right: 5%;
+  }
+}
