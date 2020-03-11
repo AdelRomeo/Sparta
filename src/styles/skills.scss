@@ -1,53 +1,102 @@
 @import "global.scss";
 
 .skill{
-  background: url("../../media/images/skillsBack.png") no-repeat left top #ffffff;
+  background: url("../../media/images/skillsBack.png") no-repeat left #ffffff;
   padding-top: 50px;
-  margin-top: 150px;
+  transition: background-position ease 500ms;
+}
+
+.skill_title{
+  margin-top: 50px !important;
 }
 
 .sill_list{
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: 10%;
-  width: 500px;
-  color: black;
+  margin-left: 1300px;
+  margin-right: auto;
+  width: 300px;
+  margin-top: 100px;
+  transition: margin-left ease 500ms;
 }
 
 .skill_item{
   position: relative;
-  width: 230px;
-  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 300px;
   &:before{
-    content: '';
     position: absolute;
+    content: '';
     width: 10px;
     height: 10px;
     background: #FF0000;
-    left: -30px;
     border-radius: 50%;
+    left: -25px;
     top: calc(50% - 5px);
   }
   &:nth-child(1){
+    margin-left: -350px;
   }
   &:nth-child(2){
-    margin-left: 80px;
+    margin-left: -280px;
   }
   &:nth-child(3){
-    margin-left: 160px;
+    margin-left: -210px;
   }
   &:nth-child(4){
-    margin-left: 240px;
+    margin-left: -140px;
   }
   &:nth-child(5){
-    margin-left: 320px;
+    margin-left: -70px;
   }
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1650px) {
 
   .sill_list{
-    margin-right: 5%;
+    margin-left: 1150px;
+  }
+
+}
+
+@media (max-width: 1500px) {
+
+  .skill{
+    background-position: -350px;
+  }
+
+  .sill_list{
+    margin-left: 70%;
+  }
+}
+
+@media (max-width: 1050px){
+
+  .skill{
+    overflow: hidden;
+    background-position: -450px;
+  }
+
+  .sill_list{
+    margin-left: 65%;
+  }
+}
+
+@media (max-width: 1000px){
+
+  .skill{
+    overflow: hidden;
+    background: none;
+  }
+
+  .sill_list{
+    @include auto-margin;
+    width: 100%;
+  }
+
+  .skill_item{
+    margin: 0 auto !important;
+    margin-top: 60px !important;
+    width: 80%;
   }
 }
