@@ -1,0 +1,97 @@
+@import "global.scss";
+
+.program-container{
+  background: #ffffff;
+  color: black;
+  padding-top: 100px;
+}
+
+.container_list{
+  @include auto-margin;
+  background: url("../../media/images/programBack.png") no-repeat;
+  width: 1137px;
+  margin-top: 50px;
+}
+
+.program-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 850px;
+  @include auto-margin;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.program-item{
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+
+.program-item_numb{
+  color: #FF0000;
+  font-family: $sec-font;
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.program-item_descr{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.program_sign-up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 130px;
+  &>span{
+    color: #FF0000;
+    font-family: $sec-font;
+    font-weight: 700;
+    font-size: 70px;
+    padding-right: 40px;
+  }
+}
+
+.program_footer{
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+@media (max-width: 1160px) {
+
+  .container_list{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 870px) {
+
+  .program-list{
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .program-item{
+    @include auto-margin;
+  }
+
+  .program_sign-up{
+    flex-direction: column;
+  }
+
+  .program_sign-up{
+    margin-top: 30px;
+    padding-bottom: 0;
+    &>span{
+      padding-right: 0;
+      font-size: 60px;
+    }
+  }
+
+}
+
