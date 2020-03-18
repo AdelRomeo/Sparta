@@ -1,0 +1,17 @@
+@import "global.scss";
+
+.review{
+  background: url("../../media/images/reviewBack.png") white center no-repeat;
+  padding-top: 100px;
+}
+
+.review_video{
+  width: min-content;
+  @include auto-margin;
+  margin-top: 50px;
+}
+
+.review_comment{
+  background: white;
+  margin-top: 100px;
+}
