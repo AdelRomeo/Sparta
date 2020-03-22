@@ -1,0 +1,40 @@
+@import "global.scss";
+
+.map{
+  padding-top: 100px;
+}
+
+.map_title{
+  margin-bottom: 50px !important;
+}
+
+#map{
+  @include auto-margin;
+  width: 70%;
+  height: 700px;
+}
+
+@media (max-width: 1500px) {
+
+
+  #map{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  #map{
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  #map{
+    height: 300px;
+  }
+
+}
