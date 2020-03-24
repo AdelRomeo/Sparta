@@ -1,0 +1,43 @@
+@import "global.scss";
+
+.question-container{
+  background: url("../../media/images/questionback.png") no-repeat center;
+  margin-top: 100px;
+}
+
+.question{
+  @include auto-margin;
+  width: 380px;
+  padding-top: 200px;
+  padding-bottom: 250px;
+}
+
+.question_title{
+  color: $second-color;
+  font-family: $sec-font;
+  font-size: 55px;
+  margin-bottom: 0;
+}
+
+.question_descr{
+  color: $second-color;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.question_name-inp,
+.question_phone-inp{
+  border: none;
+  padding: 15px;
+  background: rgba(115, 115, 115, 0.35);
+  color: $second-color;
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  &::-webkit-input-placeholder { color: white; }
+}
+
+.question_submit{
+  display: block;
+  @include auto-margin;
+}
