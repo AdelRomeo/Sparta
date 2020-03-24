@@ -1,0 +1,13 @@
+@import "global.scss";
+
+.main-footer{
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &>span:nth-child(2){
+    border-bottom: 1px dashed black;
+  }
+}
+
