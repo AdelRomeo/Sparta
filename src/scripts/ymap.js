@@ -15,6 +15,8 @@ function init () {
         searchControlProvider: 'yandex#search'
     });
 
+    myMap.behaviors.disable('scrollZoom'); //отключение скролла на карте
+
     document.getElementById('destroyButton').onclick = function () {
         // Для уничтожения используется метод destroy.
         myMap.destroy();
