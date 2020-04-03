@@ -1,0 +1,10 @@
+body{
+  position: relative;
+}
+
+.popup{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
