@@ -1,10 +1,69 @@
+@import "global.scss";
+
 body{
   position: relative;
 }
 
 .popup{
-  position: absolute;
+  width: 300px;
+  position: fixed;
+  left: calc(50% - 150px);
+  top: 200px;
   display: flex;
   flex-direction: column;
   visibility: hidden;
+  opacity: 0;
+  color: white;
+  z-index: 999;
+  transition: opacity 500ms;
+}
+
+.popup_close{
+  position: absolute;
+  right: -40px;
+  top: -1px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: all 300ms;
+  &:hover{
+    transform: rotate(90deg);
+  }
+}
+
+.popup-field{
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(115, 115, 115, 0.51);
+  font-size: 22px;
+  padding: 5px;
+  color: white;
+  &::-webkit-input-placeholder { color: white;}
+}
+
+.popup-inp{
+  height: 40px;
+}
+
+.popup-message{
+  width: 100%;
+  height: 100px;
+}
+
+.popup-send{
+  color: white;
+  background: rgba(115,115,115,0.82);
+  border-radius: 10px;
+  font-size: 30px;
+  width: max-content;
+  text-transform: uppercase;
+  transition: all 200ms;
+  padding: 5px;
+  @include auto-margin;
+  &:hover{
+    -webkit-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.75);
+  }
 }
