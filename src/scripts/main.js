@@ -15,3 +15,5 @@
         popup.style.opacity = '0';
     })
 })();
+
+let test = 1;
