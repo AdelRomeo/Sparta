@@ -27,11 +27,6 @@
   height: 265px;
 }
 
-.review_item-comment{
-  display: flex;
-  padding: 10px;
-}
-
 .review_item-info{
   margin-left: 10px;
   &>h4{
@@ -50,6 +45,30 @@
     margin: 5px;
   }
 }
+
+// JS style
+
+.review_list-comment{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.review_item-comment{
+  display: flex;
+  padding: 10px;
+  margin-right: 100px;
+  margin-left: 0px;
+  min-width: 100%;
+  transition: all 1000ms;
+}
+
+.review_left-arrow,
+.review_right-arrow{
+  cursor: pointer;
+}
+
+// JS style
 
 @media (max-width: 1160px) {
 
