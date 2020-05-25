@@ -29,21 +29,23 @@
     arrowLeft.addEventListener('click', ()=>{
         leftmarg -= comItem.offsetWidth + 100;
         arrowRight.style.opacity = '1';
+        arrowRight.style.display = 'inline';
         comItem.style.marginLeft = leftmarg + 'px';
-        if (leftmarg <= -3720){
+        if (leftmarg <= -comItem.offsetWidth * 3){
             arrowLeft.style.opacity = '0';
+            arrowLeft.style.display = 'none';
+
         }
     });
 
     arrowRight.addEventListener('click', ()=>{
         leftmarg += comItem.offsetWidth + 100;
         arrowLeft.style.opacity = '1';
+        arrowLeft.style.display = 'inline';
         comItem.style.marginLeft = leftmarg + 'px';
         if (leftmarg >= 0){
             arrowRight.style.opacity = '0';
+            arrowRight.style.display = 'none';
         }
     });
-})();
-
-let dada = 1;
-let dada = 2;
+})(); // перемещение комментариев в блоке review
